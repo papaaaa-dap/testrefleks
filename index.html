@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Test</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-select=no">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <div id="start-screen" class="panel">
+            <h1 class="glitch-text">REFLEKS TEST</h1>
+            <p>UJI REAKSI KECEPATAN TANGAN. JANGAN KLIK TERLALU CEPAT.</p>
+            
+            <div class="input-group">
+                <input type="text" id="username" placeholder="MASUKAN NAMA ANDA" autocomplete="off">
+                <button id="btn-start">START</button>
+            </div>
+            
+            <div id="leaderboard-container">
+                <h2>TOP LEADERBOARD</h2>
+                <ul id="leaderboard-list"></ul>
+            </div>
+        </div>
+
+        <div id="game-screen" class="panel hidden">
+            <div class="stats-bar">
+                <div class="stat-item">USER: <span id="display-user" class="highlight"></span></div>
+                <div class="stat-item">AVG: <span id="stat-avg" class="highlight">0</span>ms</div>
+                <div class="stat-item">BEST: <span id="stat-fastest" class="highlight">-</span>ms</div>
+                <div class="stat-item">STREAK: <span id="stat-streak" class="highlight">0</span></div>
+                <div class="stat-item">TRYS: <span id="stat-attempts" class="highlight">0</span></div>
+            </div>
+            
+            <div id="reaction-box" class="box-idle">
+                <span id="box-text">BERSIAPLAH UNTUK MULAI</span>
+            </div>
+            
+            <button id="btn-finish" class="hidden btn-danger">AKHIRI DAN LIHAT HASIL</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
